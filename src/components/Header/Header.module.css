@@ -1,0 +1,35 @@
+.HeaderNavigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.Link{
+    /* color: black; */
+    gap: 10px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text);        /*берем --text из текущей темы*/
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.Link:hover{
+    color: var(--accent)    /*используем акцентный цвет*/
+}
+
+/*Текст для активной ссылки*/
+.Link:active{
+    color: var(--text-h)    
+}
+
+.Logo{
+    height: 40px;
+    width: 40px;
+}

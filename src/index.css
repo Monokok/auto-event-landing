@@ -30,8 +30,9 @@
   }
 }
 
+/* Темная тема теперь не только для prefers-color-scheme, но и для класса .dark */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not(.light) {
     --text: #9ca3af;
     --text-h: #f3f4f6;
     --bg: #16171d;
