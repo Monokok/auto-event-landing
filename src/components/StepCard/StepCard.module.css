@@ -1,0 +1,36 @@
+.StepCard{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* border: 1px solid red; */
+    width: 300px;
+    align-items: center;
+}
+
+
+.Step {
+  width: 72px;            /* ширина круга */
+  height: 72px;           /* высота = ширине → круг */
+  border-radius: 50%;     /* обязательный круг */
+  /* background-color: var(--text); */
+  border: 1px solid #6750A4;
+  border-width: 2.5px;
+
+  display: flex;
+  align-items: center;    /* вертикальный центр */
+  justify-content: center; /* горизонтальный центр */
+
+  font-size: 36px;
+  padding: 0;          /* убираем лишний padding, он мешает */
+  margin: 0;           /* если надо */
+}
+
+.Header{
+    font-size: 25px;
+    text-align: center;
+}
+
+.Title{
+    font-size: 16px;
+    text-align: center;
+}

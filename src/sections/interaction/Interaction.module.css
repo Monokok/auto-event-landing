@@ -1,0 +1,36 @@
+.Interaction{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 40px;
+    align-items: center;
+}
+
+.Button{
+    width: 150px;
+    height: 40px;
+    border-radius: 16px;
+    background-color: #6750A4;
+    border-color: #6750A4;
+}
+
+.StepsContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .StepsContainer {
+    flex-direction: column;
+  }
+}
+
+.Header{
+    font-size: 25px;
+    text-align: center;
+}
+
+.Title{
+    font-size: 20px;
+    text-align: center;
+}

@@ -3,6 +3,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import logo from "../../assets/header-logo.svg";
 import HeroDescription from "../HeroDescription/HeroDescription";
 import ProjectDescription from "../../sections/project-description/ProjectDescription";
+import Interaction from "../../sections/interaction/Interaction";
 
 function Header() {
   return (
@@ -28,6 +29,7 @@ function Header() {
           <>
           <HeroDescription></HeroDescription>
           <ProjectDescription></ProjectDescription>
+          <Interaction></Interaction>
           </>
           }></Route>
         <Route path="/about" element={<>About</>}></Route>
