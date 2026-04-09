@@ -4,6 +4,7 @@ import logo from "../../assets/header-logo.svg";
 import HeroDescription from "../HeroDescription/HeroDescription";
 import ProjectDescription from "../../sections/project-description/ProjectDescription";
 import Interaction from "../../sections/interaction/Interaction";
+import Footer from "../../sections/footer/Footer";
 
 function Header() {
   return (
@@ -13,12 +14,12 @@ function Header() {
           <img className={styles.Logo} src={logo}></img>
           Автомобильные события
         </Link>
-        <Link className={styles.Link} to={"/"}>
+        <Link className={styles.Link} to={"https://monokok.github.io/auto-events/"}>
           Главная страница проекта
         </Link>
-        <Link className={styles.Link} to={"about"}>
+        {/* <Link className={styles.Link} to={"about"}>
           О нас
-        </Link>
+        </Link> */}
         <Link className={styles.Link} to={"/"}>
           +7 (000) 000-00-00
         </Link>
@@ -30,6 +31,7 @@ function Header() {
           <HeroDescription></HeroDescription>
           <ProjectDescription></ProjectDescription>
           <Interaction></Interaction>
+          <Footer></Footer>
           </>
           }></Route>
         <Route path="/about" element={<>About</>}></Route>

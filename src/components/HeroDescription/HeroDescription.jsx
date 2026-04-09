@@ -10,7 +10,10 @@ function HeroDescription() {
           тобой на всю жизнь
         </p>
         <p className={styles.Text}>Всегда актуальные, ближайшие, лучшие</p>
-        <button className={styles.Button}>Узнать о событиях</button>
+        {/* <button className={styles.Button}>Узнать о событиях</button> */}
+        <a href="https://monokok.github.io/auto-events/" className={styles.Button}>
+        Узнать о событиях
+      </a>
       </div>
       <div className={styles.HeroColumn}>
         <img

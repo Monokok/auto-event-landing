@@ -48,7 +48,12 @@ function ProjectDescription() {
         ></Card>
       </div>
 
-      <button className={styles.Button}>Узнать о событиях</button>
+      <a
+        href="https://monokok.github.io/auto-events/"
+        className={styles.Button}
+      >
+        Узнать о событиях
+      </a>
     </div>
   );
 }
