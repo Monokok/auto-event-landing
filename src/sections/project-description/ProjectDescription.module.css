@@ -1,0 +1,37 @@
+.ProjectDescription{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.Button{
+    width: 150px;
+    height: 40px;
+    border-radius: 16px;
+    background-color: #6750A4;
+    border-color: #6750A4;
+}
+
+.HeaderTitle{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.CardGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    
+    /* Адаптивность для мобильных устройств */
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);  /* 2 колонки на планшетах */
+    }
+    
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;  /* 1 колонка на телефонах */
+    }
+}

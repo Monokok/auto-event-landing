@@ -1,0 +1,28 @@
+.Card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: 1px solid red; */
+    gap: 10px;
+    width: fit-content;
+    height: auto;
+}
+
+.TextContainer{
+
+}
+
+.Header{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.Description{
+    text-align: left;
+    font-size: 16px;
+}
+
+.Image{
+  filter: brightness(3) saturate(100%) invert(1) hue-rotate(240deg);
+}

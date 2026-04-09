@@ -2,6 +2,7 @@ import styles from "./Header.module.css";
 import { Routes, Route, Link } from "react-router-dom";
 import logo from "../../assets/header-logo.svg";
 import HeroDescription from "../HeroDescription/HeroDescription";
+import ProjectDescription from "../../sections/project-description/ProjectDescription";
 
 function Header() {
   return (
@@ -23,7 +24,12 @@ function Header() {
       </nav>
 
       <Routes>
-        <Route path="/" element={<HeroDescription></HeroDescription>}></Route>
+        <Route path="/" element={
+          <>
+          <HeroDescription></HeroDescription>
+          <ProjectDescription></ProjectDescription>
+          </>
+          }></Route>
         <Route path="/about" element={<>About</>}></Route>
       </Routes>
     </>
