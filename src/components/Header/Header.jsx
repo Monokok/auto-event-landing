@@ -14,7 +14,10 @@ function Header() {
           <img className={styles.Logo} src={logo}></img>
           Автомобильные события
         </Link>
-        <Link className={styles.Link} to={"https://monokok.github.io/auto-events/"}>
+        <Link
+          className={styles.Link}
+          to={"https://monokok.github.io/auto-events/"}
+        >
           Главная страница проекта
         </Link>
         {/* <Link className={styles.Link} to={"about"}>
@@ -26,14 +29,18 @@ function Header() {
       </nav>
 
       <Routes>
-        <Route path="/" element={
-          <>
-          <HeroDescription></HeroDescription>
-          <ProjectDescription></ProjectDescription>
-          <Interaction></Interaction>
-          <Footer></Footer>
-          </>
-          }></Route>
+        <Route
+          path="/"
+          element={
+            <>
+              <HeroDescription></HeroDescription>
+              <ProjectDescription></ProjectDescription>
+              <Interaction></Interaction>
+              <Footer></Footer>
+            </>
+          }
+        ></Route>
+        <Route path="" element={<Navigate to="/" replace />} />
         <Route path="/about" element={<>About</>}></Route>
       </Routes>
     </>
