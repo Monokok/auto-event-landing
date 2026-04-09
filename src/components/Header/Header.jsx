@@ -1,5 +1,5 @@
 import styles from "./Header.module.css";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, Navigate } from "react-router-dom";
 import logo from "../../assets/header-logo.svg";
 import HeroDescription from "../HeroDescription/HeroDescription";
 import ProjectDescription from "../../sections/project-description/ProjectDescription";
