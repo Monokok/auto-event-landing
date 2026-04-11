@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter  basename="/auto-event-landing/">
       <App />
     </BrowserRouter>
   </StrictMode>,
