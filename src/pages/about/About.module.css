@@ -1,0 +1,31 @@
+.About {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+
+    line-height: 1.6;
+    color: var(--text);
+}
+
+.About h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--text);
+}
+
+.About p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 16px;
+    color: var(--text);
+}
+
+.Highlight {
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #4f46e5;
+    color: var(--text);
+}

@@ -1,13 +1,18 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
-import heroImg from "./assets/hero.png";
-import Hero from "./sections/hero-section/Hero";
 import "./App.css";
-import Header from "./components/Header/Header";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout/Layout";
+import Home from "./pages/home/Home";
+import About from "./pages/about/About";
 
 function App() {
-  return <Header></Header>;
+  return (
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+      </Route>
+    </Routes>
+  );
 }
 
 export default App;

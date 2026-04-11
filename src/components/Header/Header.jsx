@@ -1,49 +1,33 @@
 import styles from "./Header.module.css";
-import { Routes, Route, Link, Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../../assets/header-logo.svg";
-import HeroDescription from "../HeroDescription/HeroDescription";
-import ProjectDescription from "../../sections/project-description/ProjectDescription";
-import Interaction from "../../sections/interaction/Interaction";
-import Footer from "../../sections/footer/Footer";
 
 function Header() {
   return (
-    <>
-      <nav className={styles.HeaderNavigation}>
-        <Link className={styles.Link} to={"/"}>
-          <img className={styles.Logo} src={logo}></img>
-          Автомобильные события
-        </Link>
-        <Link
-          className={styles.Link}
-          to={"https://monokok.github.io/auto-events/"}
-        >
-          Главная страница проекта
-        </Link>
-        {/* <Link className={styles.Link} to={"about"}>
-          О нас
-        </Link> */}
-        <Link className={styles.Link} to={"/"}>
-          +7 (000) 000-00-00
-        </Link>
-      </nav>
+    <nav className={styles.HeaderNavigation}>
+      <Link className={styles.Link} to={"/"}>
+        <img className={styles.Logo} src={logo} />
+        Автомобильные события
+      </Link>
 
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <HeroDescription></HeroDescription>
-              <ProjectDescription></ProjectDescription>
-              <Interaction></Interaction>
-              <Footer></Footer>
-            </>
-          }
-        ></Route>
-        <Route path="" element={<Navigate to="/" replace />} />
-        <Route path="/about" element={<>About</>}></Route>
-      </Routes>
-    </>
+      {/* Важно!: внешняя ссылка - не через Link */}
+      <a
+        className={styles.Link}
+        href="https://monokok.github.io/auto-events/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Главная страница проекта
+      </a>
+
+      <Link className={styles.Link} to={"/about"}>
+        О нас
+      </Link>
+
+      <a className={styles.Link} href="tel:+70000000000">
+        +7 (000) 000-00-00
+      </a>
+    </nav>
   );
 }
 

@@ -6,7 +6,7 @@ import HeroDescription from "../../components/HeroDescription/HeroDescription";
 function Hero() {
   return (
     <section>
-      <Header></Header>
+      {/* <Header></Header> */}
       <HeroDescription></HeroDescription>
     </section>
   );

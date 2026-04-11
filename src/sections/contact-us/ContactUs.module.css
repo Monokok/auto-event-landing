@@ -1,0 +1,50 @@
+.ContactUs {
+    max-width: 600px;
+    margin: 0 auto; /* центрирование */
+    padding: 40px 20px;
+    text-align: center;
+
+    border-radius: 16px;
+    /* background-color: #f9fafb; */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.ContactUs h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.description {
+    font-size: 16px;
+    color: var(--text);
+    margin-bottom: 30px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link {
+    display: inline-block;
+    padding: 12px 20px;
+
+    text-decoration: none;
+    font-weight: 400;
+
+    color: white;
+    background-color: #6750A4;
+
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.link:hover {
+    background-color: #4338ca;
+    transform: translateY(-2px);
+}
+
+.link:active {
+    transform: translateY(0);
+}
